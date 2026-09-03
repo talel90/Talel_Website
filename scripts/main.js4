@@ -1,0 +1,49 @@
+/**
+ * Personal Portfolio Website - Main JavaScript
+ * Features: Typewriter effect, scroll animations, navigation highlighting
+ */
+
+// ========================================
+// Typewriter Effect
+// ========================================
+class Typewriter {
+    constructor(element, options = {}) {
+        this.element = element;
+        this.texts = JSON.parse(element.dataset.texts || '[]');
+        this.typeSpeed = options.typeSpeed || 100;
+        this.deleteSpeed = options.deleteSpeed || 50;
+        this.pauseTime = options.pauseTime || 2000;
+        this.currentIndex = 0;
+        this.currentText = '';
+        this.isDeleting = false;
+
+        if (this.texts.length > 0) {
+            this.type();
+        }
+    }
+
+    type() {
+        const fullText = this.texts[this.currentIndex];
+
+        if (this.isDeleting) {
+            this.currentText = fullText.substring(0, this.currentText.length - 1);
+        } else {
+            this.currentText = fullText.substring(0, this.currentText.length + 1);
+        }
+
+        this.element.textContent = this.currentText;
+
+        let typeSpeed = this.isDeleting ? this.deleteSpeed : this.typeSpeed;
+
+        if (!this.isDeleting && this.currentText === fullText) {
+            typeSpeed = this.pauseTime;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.currentText === '') {
+            this.isDeleting = false;
+            this.currentIndex = (this.currentIndex + 1) % this.texts.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+    }
+}
