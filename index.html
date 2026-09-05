@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website showcasing projects, skills, and experience">
+    <title>Elijah Olson</title>
+    <link rel="icon" href="favicon-eo-glow-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="favicon-eo-glow-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="favicon-eo-glow-dark.svg" alt="EO" class="nav-logo-img nav-logo-dark">
+                <img src="favicon-eo-glow-light.svg" alt="EO" class="nav-logo-img nav-logo-light">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="assets/images/websitephoto.png" alt="Elijah Olson">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name">Elijah Olson</h1>
+                    <p class="hero-tagline">
+                        <span class="typewriter" data-texts='["Full Stack Engineer", "Philosophy of Mind", "Ethical AI Builder", "Human-Centered Designer", "Computational Neuroscientist"]'></span>
+                        <span class="typewriter-cursor">|</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://www.linkedin.com/in/olsonelijah/" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/bluelijah" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="cv.pdf" target="_blank" class="btn btn-glass">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"/>
+                                <path d="M8 12h8v2H8zm0 4h8v2H8z"/>
+                            </svg>
+                            CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image reveal">
+                        <div class="about-slideshow">
+                            <img src="assets/images/about/aboutme1.JPG" alt="About photo 1" class="about-slide active">
+                            <img src="assets/images/about/aboutme2.JPG" alt="About photo 2" class="about-slide">
+                            <img src="assets/images/about/aboutme3.JPG" alt="About photo 3" class="about-slide">
+                            <img src="assets/images/about/aboutme4.jpg" alt="About photo 4" class="about-slide">
+                            <img src="assets/images/about/aboutme5.JPG" alt="About photo 5" class="about-slide">
+                            <img src="assets/images/about/aboutme6.JPG" alt="About photo 6" class="about-slide">
+                            <img src="assets/images/about/aboutme7.JPG" alt="About photo 7" class="about-slide">
+                            <img src="assets/images/about/aboutme8.JPG" alt="About photo 8" class="about-slide">
+                            <img src="assets/images/about/aboutme9.JPG" alt="About photo 9" class="about-slide">
+                            <img src="assets/images/about/aboutme10.jpg" alt="About photo 10" class="about-slide">
+                        </div>
+                    </div>
+                    <div class="about-text reveal">
+                        <p>
+                            At 15, I was building gaming PCs and realized assembling hardware wasn't enough; I needed to understand what made it all work. Delving into it, computer science grabbed me as the most fundamental form of modern engineering; the discipline that literally computes reality into existence. I saw a beautiful freedom in the tool that was just then unveiling its possibilities to me.
+                        </p>
+                        <p>
+                            Through debugging neural simulations, far too many math courses, and discovering virtue ethics, I landed somewhere that makes sense: In an intersection that told me, I care deeply about what technology can achieve, but just as much about <span class="highlight">how</span> and <span class="highlight">if</span> we should be achieving it. I found the gap between the tech world and the rest of the world was growing alongside my broadening knowledge of both, and so, I have devoted myself to bridging this. I'm studying computer science and philosophy because the future needs people who can build systems <em>and</em> interrogate them.
+                        </p>
+                        <p>
+                            My next move is graduate school, focusing on AI ethics and philosophy of mind; making sure we're building technology that actually works for people, not just technically but humanly. Until then, you can find me climbing rocks, exploring the world of culinary, hiking with friends, and traveling whenever I can. Good ideas don't come from staring at screens; they come from moving, from putting your hands on real things, from stepping back far enough to see what you're actually doing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Aug 2026</span>
+                            <h3 class="timeline-title">B.S. Computer Science & Engineering</h3>
+                            <h4 class="timeline-company"><a href="https://www.ucmerced.edu/" target="_blank" rel="noopener noreferrer">University of California, Merced</a></h4>
+                            <p class="timeline-description">
+                                Minor in Philosophy. Relevant coursework includes Deep Learning, Neural Networks, NLP, Philosophy of the Human Mind, Cognitive Neuroscience, Tech Ethics, Contemporary Ethics, and Metaphysics.
+                            </p>
+                        </div>
+                        <div class="timeline-image timeline-image--no-border">
+                            <div class="timeline-image-duo timeline-image-duo--static">
+                                <img src="assets/images/education/bs1.jpg" alt="UC Merced photo 1">
+                                <img src="assets/images/education/bs2.jpg" alt="UC Merced photo 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Sep 2025 - Aug 2026</span>
+                            <h3 class="timeline-title">Website Manager & Data Technician</h3>
+                            <h4 class="timeline-company"><a href="https://www.ucmerced.edu/" target="_blank" rel="noopener noreferrer">University of California, Merced</a></h4>
+                            <div class="timeline-tech">
+                                <span class="hover-hint"><span class="hint-desktop">Hover me!</span><span class="hint-mobile">Tap me!</span><span class="hint-arrow"></span></span>
+                                <i class="devicon-html5-plain" title="HTML5"></i>
+                                <i class="devicon-css3-plain" title="CSS3"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                                <i class="devicon-python-plain" title="Python"></i>
+                            </div>
+                            <p class="timeline-description">
+                                Started as Website Manager of the <a href="https://cec.ucmerced.edu/" target="_blank" rel="noopener noreferrer">CEC</a>, completing a fullstack redesign that achieved a 22% increase in engagement and 45% increase in event attendance, and later a redesign of the <a href="https://cec.ucmerced.edu/college-corps" target="_blank" rel="noopener noreferrer">College Corps</a> website. Based on this work, was promoted to Website Manager of <abbr title="Offices of Leadership, Service, and Career">OLSC</abbr>, a congregation of three UC Merced offices, where I am now leading a fullstack redesign of the <a href="https://studentleadership.ucmerced.edu/" target="_blank" rel="noopener noreferrer">SLC</a> website. Also designed and implemented surveys, experience reports, and automated data pipelines for all UC Merced-affiliated community programs.
+                            </p>
+                        </div>
+                        <div class="timeline-image timeline-image-swap">
+                            <div class="swap-slide active">
+                                <div class="timeline-image-duo">
+                                    <img src="assets/images/experience/CEC1.jpg" alt="CEC Website 1">
+                                    <img src="assets/images/experience/CEC2.jpg" alt="CEC Website 2">
+                                </div>
+                            </div>
+                            <div class="swap-slide swap-coming-soon">
+                                <span class="coming-soon-label">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Jun 2025 - Aug 2025</span>
+                            <h3 class="timeline-title">Neural Simulation Architect</h3>
+                            <h4 class="timeline-company"><a href="https://simbrain.net/" target="_blank" rel="noopener noreferrer">SIMBRAIN</a></h4>
+                            <div class="timeline-tech">
+                                <i class="devicon-kotlin-plain" title="Kotlin"></i>
+                                <i class="devicon-java-plain" title="Java"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                            </div>
+                            <p class="timeline-description">
+                                Transformed theoretical neural circuit models into fully functional implementations in Kotlin & Java, enabling researchers to simulate diverse neurological systems. Enhanced platform accessibility through library improvements, comprehensive documentation, and UX refinements.
+                            </p>
+                        </div>
+                        <a href="https://simbrain.net/" target="_blank" rel="noopener noreferrer" class="timeline-image website-preview website-preview-image">
+                            <div class="website-preview-header">
+                                <span class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </span>
+                                <span class="website-url">simbrain.net</span>
+                            </div>
+                            <div class="website-preview-content" style="background-image: url('assets/images/experience/simbrain.png');">
+                                <span class="website-preview-cta">Visit Site →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Jun 2024 - Aug 2024</span>
+                            <h3 class="timeline-title">Fullstack Engineer Intern</h3>
+                            <h4 class="timeline-company">Patient Safety</h4>
+                            <div class="timeline-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                                <i class="devicon-java-plain" title="Java"></i>
+                                <i class="devicon-pandas-plain" title="Pandas"></i>
+                                <i class="devicon-azuresqldatabase-plain" title="SQL"></i>
+                                <i class="devicon-django-plain" title="Django"></i>
+                                <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                            </div>
+                            <p class="timeline-description">
+                                Architected backend data pipelines in Python and SQL, automating CSV ingestion with validation, creating infrastructure for medical data management across millions of records. Collaborated on Django and PostgreSQL interfaces to optimize seamless backend-frontend integration.
+                            </p>
+                        </div>
+                        <a href="https://github.com/ianboru/hospital_finder" target="_blank" rel="noopener noreferrer" class="timeline-image github-preview">
+                            <div class="github-preview-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span class="github-repo-path">ianboru / hospital_finder</span>
+                            </div>
+                            <div class="github-preview-content">
+                                <p class="github-preview-desc">Hospital safety data visualization and analysis tool</p>
+                                <div class="github-preview-stats">
+                                    <span class="github-lang"><span class="lang-dot python"></span>Python</span>
+                                    <span class="github-lang"><span class="lang-dot javascript"></span>JavaScript</span>
+                                </div>
+                                <span class="github-preview-cta">View Repository →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Nov 2023 - Mar 2024</span>
+                            <h3 class="timeline-title">Research Assistant</h3>
+                            <h4 class="timeline-company"><a href="https://www.ucmerced.edu/" target="_blank" rel="noopener noreferrer">University of California, Merced</a></h4>
+                            <div class="timeline-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                                <i class="devicon-pandas-plain" title="Pandas"></i>
+                                <i class="devicon-matplotlib-plain" title="Matplotlib"></i>
+                            </div>
+                            <p class="timeline-description">
+                                Developed data processing scripts in Python to extract, clean, and organize large sets of EEG data, identifying and isolating relevant neural features. Collaborated with a graduate researcher to translate processed neurological data into actionable insights about sensory processing in the human brain.
+                            </p>
+                        </div>
+                        <a href="https://escholarship.org/uc/item/9h06s4pf" target="_blank" rel="noopener noreferrer" class="timeline-image website-preview website-preview-image">
+                            <div class="website-preview-header">
+                                <span class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </span>
+                                <span class="website-url">escholarship.org</span>
+                            </div>
+                            <div class="website-preview-content" style="background-image: url('assets/images/experience/research.png');">
+                                <span class="website-preview-cta">Read Paper →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Apr 2020 - Oct 2021</span>
+                            <h3 class="timeline-title">Software Engineer Intern</h3>
+                            <h4 class="timeline-company"><a href="https://www.tappityapp.com/" target="_blank" rel="noopener noreferrer">Tappity Inc.</a></h4>
+                            <div class="timeline-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                                <i class="devicon-react-original" title="React"></i>
+                            </div>
+                            <p class="timeline-description">
+                                Collaborated with full-stack engineers using Python, JavaScript, and React to design and implement new experiential learning activities for a science education app, boosting user engagement and information retention among K–8 students.
+                            </p>
+                        </div>
+                        <a href="https://www.tappityapp.com/" target="_blank" rel="noopener noreferrer" class="timeline-image website-preview website-preview-logo-box">
+                            <div class="website-preview-header">
+                                <span class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </span>
+                                <span class="website-url">tappityapp.com</span>
+                            </div>
+                            <div class="website-preview-content">
+                                <img src="assets/images/experience/tappity.png" alt="Tappity" class="website-preview-logo-img">
+                                <span class="website-preview-cta">Visit Site →</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- LLNL Project -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image llnl-preview">
+                            <img src="assets/images/projects/llnltemp.jpg" alt="Lawrence Livermore National Laboratory">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Lawrence Livermore National Laboratory</h3>
+                            <p class="project-description">
+                                Team-Lead capstone project developing STEM educational video games with LLNL researchers, investigating the effectiveness of game-based learning environments for user engagement, information retention, and learning-environment feasibility.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-godot-plain" title="Godot"></i>
+                                <i class="devicon-csharp-plain" title="C#"></i>
+                                <i class="devicon-python-plain" title="Python"></i>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-link project-link-coming-soon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="11" width="14" height="9" rx="2"></rect>
+                                        <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                                    </svg>
+                                    Code protected by NDA, feel free to reach out to discuss my work!
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Inside LLMs Project -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image llms-preview">
+                            <div class="llms-logo">
+                                <div class="llms-logo-text">Inside <span class="llms-glitch" data-text="LLMs">LLMs</span></div>
+                                <div class="llms-tagline">Explore the Architecture</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title"><a href="https://bluelijah.github.io/Inside-LLMs" target="_blank" rel="noopener noreferrer">Inside LLMs</a></h3>
+                            <p class="project-description">
+                                Live educational website teaching the functional principles of large language models through interactive visual demos for tokenization, vector embeddings, self-attention, and RLHF. Built in vanilla HTML, CSS, and JavaScript.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-html5-plain" title="HTML5"></i>
+                                <i class="devicon-css3-plain" title="CSS3"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://bluelijah.github.io/Inside-LLMs" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Visit Here
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image syllabud-preview">
+                            <!-- Animated flowers -->
+                            <div class="syllabud-flower">
+                                <div class="syllabud-flower-inner">
+                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
+                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
+                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
+                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
+                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
+                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
+                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
+                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
+                                    </svg>
+                                    <div class="syllabud-flower-stem"></div>
+                                </div>
+                            </div>
+                            <div class="syllabud-flower">
+                                <div class="syllabud-flower-inner">
+                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
+                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
+                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
+                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
+                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
+                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
+                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
+                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
+                                    </svg>
+                                    <div class="syllabud-flower-stem"></div>
+                                </div>
+                            </div>
+                            <div class="syllabud-flower">
+                                <div class="syllabud-flower-inner">
+                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
+                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
+                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
+                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
+                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
+                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
+                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
+                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
+                                    </svg>
+                                    <div class="syllabud-flower-stem"></div>
+                                </div>
+                            </div>
+                            <div class="syllabud-flower">
+                                <div class="syllabud-flower-inner">
+                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
+                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
+                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
+                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
+                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
+                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
+                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
+                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
+                                    </svg>
+                                    <div class="syllabud-flower-stem"></div>
+                                </div>
+                            </div>
+                            <div class="syllabud-flower">
+                                <div class="syllabud-flower-inner">
+                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
+                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
+                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
+                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
+                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
+                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
+                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
+                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
+                                    </svg>
+                                    <div class="syllabud-flower-stem"></div>
+                                </div>
+                            </div>
+                            <div class="syllabud-flower">
+                                <div class="syllabud-flower-inner">
+                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
+                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
+                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
+                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
+                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
+                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
+                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
+                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
+                                    </svg>
+                                    <div class="syllabud-flower-stem"></div>
+                                </div>
+                            </div>
+                            <!-- Logo -->
+                            <div class="syllabud-logo">
+                                <div class="syllabud-logo-text">Syllabud</div>
+                                <div class="syllabud-tagline">Learn What Matters</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title"><a href="https://syllabud.app" target="_blank" rel="noopener noreferrer">Syllabud.app</a></h3>
+                            <p class="project-description">
+                                Live website and 2nd place hackathon winner. Full-stack AI course creator that generates personalized curricula with curated resources based on subject, timeline, depth, and learning style.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-react-original" title="React"></i>
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-fastapi-plain" title="FastAPI"></i>
+                                <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                                <i class="devicon-css3-plain" title="CSS"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://syllabud.app" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Visit Here
+                                </a>
+                                <a href="https://github.com/bluelijah/Syllabud" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">
+                            <img src="assets/images/projects/fractal.png" alt="Function Visualization">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Function Visualization</h3>
+                            <p class="project-description">
+                                A design tool that renders complex fractals (Mandelbrot, Fibonacci, etc.) by mapping mathematical functions to visual outputs, exploring the intersection of math and generative art.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-pygame-original" title="Pygame"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://docs.google.com/presentation/d/1_JND1KFuckV7eHV7WKbPKbBeZplNyCRLAsypv4-UkKU/edit?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                    Slides
+                                </a>
+                                <a href="https://github.com/bluelijah/MandelbrotFractal" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category reveal collapsed">
+                        <h3 class="skill-category-title" data-collapsible>
+                            Languages
+                            <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </h3>
+                        <div class="skills-grid skills-icons">
+                            <span class="hover-hint"><span class="hint-desktop">Hover me!</span><span class="hint-mobile">Tap me!</span><span class="hint-arrow"></span></span>
+                            <i class="devicon-python-plain" title="Python"></i>
+                            <i class="devicon-javascript-plain" title="JavaScript"></i>
+                            <i class="devicon-java-plain" title="Java"></i>
+                            <i class="devicon-kotlin-plain" title="Kotlin"></i>
+                            <i class="devicon-cplusplus-plain" title="C++"></i>
+                            <i class="devicon-csharp-plain" title="C#"></i>
+                            <i class="devicon-azuresqldatabase-plain" title="SQL"></i>
+                            <i class="devicon-html5-plain" title="HTML"></i>
+                            <i class="devicon-css3-plain" title="CSS"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal collapsed">
+                        <h3 class="skill-category-title" data-collapsible>
+                            Frameworks & Libraries
+                            <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </h3>
+                        <div class="skills-grid skills-icons">
+                            <i class="devicon-react-original" title="React"></i>
+                            <i class="devicon-django-plain" title="Django"></i>
+                            <i class="devicon-flask-original" title="Flask"></i>
+                            <i class="devicon-pandas-plain" title="Pandas"></i>
+                            <i class="devicon-matplotlib-plain" title="Matplotlib"></i>
+                            <i class="devicon-pygame-original" title="Pygame"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal collapsed">
+                        <h3 class="skill-category-title" data-collapsible>
+                            AI & Data Science
+                            <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </h3>
+                        <div class="skills-grid skills-icons">
+                            <i class="devicon-tensorflow-original" title="TensorFlow"></i>
+                            <i class="devicon-pytorch-original" title="PyTorch"></i>
+                            <i class="devicon-numpy-plain" title="NumPy"></i>
+                            <i class="devicon-jupyter-plain" title="Jupyter"></i>
+                            <i class="devicon-anaconda-original" title="Anaconda"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal collapsed">
+                        <h3 class="skill-category-title" data-collapsible>
+                            Tools & Databases
+                            <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </h3>
+                        <div class="skills-grid skills-icons">
+                            <i class="devicon-git-plain" title="Git"></i>
+                            <i class="devicon-github-original" title="GitHub"></i>
+                            <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                            <i class="devicon-vscode-plain" title="VS Code"></i>
+                            <i class="devicon-figma-plain" title="Figma"></i>
+                            <span class="skill-icon-text" title="Excel">Ex</span>
+                            <span class="skill-icon-text" title="Lucid">Lu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content reveal">
+                    <p class="contact-text">
+                        I'm currently open to new opportunities and would love to hear from you. Whether you have a question, a project idea, or just want to say hi, feel free to reach out!
+                    </p>
+                    <a href="mailto:ElijahOlson510@gmail.com" class="btn btn-primary btn-large">
+                        Say Hello
+                    </a>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/olsonelijah/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/bluelijah" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <span class="highlight">Elijah Olson</span></p>
+            <p class="footer-copyright">&copy; 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

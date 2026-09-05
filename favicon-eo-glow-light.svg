@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="letterGradientBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#163b73"/>
+      <stop offset="100%" stop-color="#061a3a"/>
+    </linearGradient>
+  </defs>
+  <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+        font-family="Futura, 'Century Gothic', Avenir, Montserrat, sans-serif"
+        font-size="120" font-weight="500" fill="url(#letterGradientBlue)">O</text>
+  <text x="50" y="40" text-anchor="middle" dominant-baseline="central"
+        font-family="Futura, 'Century Gothic', Avenir, Montserrat, sans-serif"
+        font-size="92" font-weight="bold" fill="url(#letterGradientBlue)">t</text>
+</svg>
