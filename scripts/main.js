@@ -93,7 +93,7 @@ class MouseRevealLines {
                     </circle>
                 </mask>
             </defs>
-            <g mask="url(#mouseMask)" stroke="#4EC45F" stroke-width="1.5" fill="none" opacity="0.7">
+            <g mask="url(#mouseMask)" stroke="#08519C" stroke-width="1.5" fill="none" opacity="0.7">
                 ${horizontalLines}
                 ${verticalLines}
             </g>
