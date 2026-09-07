@@ -3,8 +3,8 @@
    ======================================== */
 :root {
     /* Dark Mode Colors (Default) */
-    --color-primary: #e19dd9;
-    --color-primary-dark: #c77dbf;
+    --color-primary: #4292C6;
+    --color-primary-dark: #3279A8;
     --color-bg: #0a0a0a;
     --color-bg-light: #121212;
     --color-surface: rgba(255, 255, 255, 0.05);
@@ -14,9 +14,9 @@
     --color-border: rgba(255, 255, 255, 0.1);
 
     /* Glow Effects */
-    --glow-primary: 0 0 20px rgba(225, 157, 217, 0.5);
-    --glow-primary-intense: 0 0 30px rgba(225, 157, 217, 0.7);
-    --hero-glow: rgba(225, 157, 217, 0.15);
+    --glow-primary: 0 0 20px rgba(66, 146, 198, 0.5);
+    --glow-primary-intense: 0 0 30px rgba(66, 146, 198, 0.7);
+    --hero-glow: rgba(66, 146, 198, 0.15);
 
     /* Complementary Color */
     --color-complement: #4EC45F;
@@ -75,8 +75,8 @@
 @media (prefers-color-scheme: light) {
     :root {
         /* Light Mode Colors */
-        --color-primary: #c44eb3;
-        --color-primary-dark: #a33d96;
+        --color-primary: #4292C6;
+        --color-primary-dark: #3279A8;
         --color-bg: #f8f8f8;
         --color-bg-light: #ffffff;
         --color-surface: rgba(0, 0, 0, 0.03);
@@ -86,9 +86,9 @@
         --color-border: rgba(0, 0, 0, 0.1);
 
         /* Glow Effects - softer for light mode */
-        --glow-primary: 0 0 20px rgba(196, 78, 179, 0.3);
-        --glow-primary-intense: 0 0 30px rgba(196, 78, 179, 0.4);
-        --hero-glow: rgba(196, 78, 179, 0.08);
+        --glow-primary: 0 0 20px rgba(66, 146, 198, 0.3);
+        --glow-primary-intense: 0 0 30px rgba(66, 146, 198, 0.4);
+        --hero-glow: rgba(66, 146, 198, 0.08);
 
         /* Navbar */
         --nav-bg: rgba(248, 248, 248, 0.8);
@@ -1244,7 +1244,7 @@ button {
 .timeline-date {
     display: inline-block;
     padding: var(--spacing-xs) var(--spacing-sm);
-    background: rgba(225, 157, 217, 0.2);
+    background: rgba(66, 146, 198, 0.2);
     color: var(--color-primary);
     border-radius: var(--radius-sm);
     font-size: 0.85rem;
@@ -1623,7 +1623,7 @@ abbr {
 
 .tag {
     padding: 4px 12px;
-    background: rgba(225, 157, 217, 0.15);
+    background: rgba(66, 146, 198, 0.15);
     color: var(--color-primary);
     border-radius: var(--radius-sm);
     font-size: 0.8rem;
@@ -1755,7 +1755,7 @@ abbr {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--color-primary);
-    background: rgba(225, 157, 217, 0.1);
+    background: rgba(66, 146, 198, 0.1);
     border-radius: var(--radius-md);
 }
 
