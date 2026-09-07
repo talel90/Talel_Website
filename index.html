@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal portfolio website showcasing projects, skills, and experience">
-    <title>Elijah Olson</title>
+    <title>Talel Riahi</title>
     <link rel="icon" href="favicon-eo-glow-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
     <link rel="icon" href="favicon-eo-glow-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="styles/main.css">
@@ -18,8 +18,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <img src="favicon-eo-glow-dark.svg" alt="EO" class="nav-logo-img nav-logo-dark">
-                <img src="favicon-eo-glow-light.svg" alt="EO" class="nav-logo-img nav-logo-light">
+                <img src="favicon-eo-glow-dark.svg" alt="TR" class="nav-logo-img nav-logo-dark">
+                <img src="favicon-eo-glow-light.svg" alt="TR" class="nav-logo-img nav-logo-light">
             </a>
             <ul class="nav-links">
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -48,7 +48,7 @@
                 <div class="hero-text">
                     <h1 class="hero-name">Talel Riahi</h1>
                     <p class="hero-tagline">
-                        <span class="typewriter" data-texts='["Full Stack Engineer", "Computer Vision Engineer", "Ethical AI Builder",]'></span>
+                        <span class="typewriter" data-texts='["AI Developer", "Computer Vision Engineer", "Full Stack Engineer", "Ethical AI Builder"]'></span>
                         <span class="typewriter-cursor">|</span>
                     </p>
                     <div class="hero-buttons">
@@ -89,12 +89,12 @@
                         <div class="about-slideshow">
                             <img src="assets/images/about/aboutme1.JPG" alt="About photo 1" class="about-slide active">
                             <img src="assets/images/about/aboutme2.JPG" alt="About photo 2" class="about-slide">
-                            
                         </div>
                     </div>
                     <div class="about-text reveal">
                         <p>
-                            At 15, I was more interested in why a machine did what it did than in the machine itself. That curiosity turned into a Computer Science degree because I came to see software not as a tool but as a language for building anything, including things that had never existed before.</p>
+                            At 15, I was more interested in why a machine did what it did than in the machine itself. That curiosity turned into a Computer Science degree because I came to see software not as a tool but as a language for building anything, including things that had never existed before.
+                        </p>
                         <p>
                             Through debugging neural simulations, far too many math courses, and discovering virtue ethics, I landed somewhere that makes sense: In an intersection that told me, I care deeply about what technology can achieve, but just as much about <span class="highlight">how</span> and <span class="highlight">if</span> we should be achieving it. I found the gap between the tech world and the rest of the world was growing alongside my broadening knowledge of both, and so, I have devoted myself to bridging this. I'm studying computer science because the future needs people who can build systems <em>and</em> interrogate them.
                         </p>
@@ -111,12 +111,14 @@
             <div class="container">
                 <h2 class="section-title">Experience</h2>
                 <div class="timeline">
+
+                    <!-- Education -->
                     <div class="timeline-item reveal">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">June 2026</span>
+                            <span class="timeline-date">2023 - Jun 2026</span>
                             <h3 class="timeline-title">B.S. Computer Science & Engineering</h3>
-                            <h4 class="timeline-company"><a href="https://fss.rnu.tn/" target="_blank" rel="noopener noreferrer">Faculty of Sciences of Sfax</a></h4>
+                            <h4 class="timeline-company"><a href="https://fss.rnu.tn/" target="_blank" rel="noopener noreferrer">Faculté des Sciences de Sfax</a></h4>
                             <p class="timeline-description">
                                 Relevant coursework includes Data Structures & Algorithms, Object-Oriented Software Engineering, Full-Stack Web Development, Database Systems & Data Warehousing, Machine Learning & Artificial Intelligence, Cloud Computing & Big Data, Mobile & Distributed Systems, Network Architecture & Cybersecurity, and Agile Software Development.
                             </p>
@@ -128,22 +130,29 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- AI Developer Intern - Ultima / SmartPlayAI -->
                     <div class="timeline-item reveal">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Sep 2024 - Aug 2026</span>
-                            <h3 class="timeline-title">IEEE Student Branch</h3>
-                            <h4 class="timeline-company"><a href="https://fss.ieee.tn/" target="_blank" rel="noopener noreferrer">IEEE FSS SB</a></h4>
-
+                            <span class="timeline-date">Jan 2026 - Jul 2026</span>
+                            <h3 class="timeline-title">AI Developer Intern</h3>
+                            <h4 class="timeline-company">Ultima</h4>
+                            <div class="timeline-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-opencv-plain" title="OpenCV"></i>
+                                <i class="devicon-react-original" title="React"></i>
+                                <i class="devicon-fastapi-plain" title="FastAPI"></i>
+                            </div>
                             <p class="timeline-description">
-                                Active member of the **IEEE Student Branch**, serving as **Treasurer of the IEEE Robotics and Automation Society (RAS) Student Chapter**. Organized and led technical workshops, contributed to the planning and execution of student events, and actively participated in hackathons and engineering competitions, including **TSYP13**. This experience strengthened my leadership, event management, teamwork, and ability to engage with and support a technical community.
+                                Developed AI and computer vision features for SmartPlayAI, Ultima's platform for automated padel match analysis. Built and optimized the full pipeline — combining TrackNetV3, YOLOv8/YOLOv8-Pose, SAM2, the Hungarian algorithm, and homographic court projection — for player and ball detection, tracking, and pose estimation, producing a 179-column behavioral dataset served through a React and FastAPI dashboard. Handled data preprocessing and annotation, model training and optimization, and performance tuning under real-world usage conditions.
                             </p>
                         </div>
                         <div class="timeline-image timeline-image-swap">
                             <div class="swap-slide active">
                                 <div class="timeline-image-duo">
-                                    <img src="assets/images/experience/CEC1.jpg" alt="CEC Website 1">
-                                    <img src="assets/images/experience/CEC2.jpg" alt="CEC Website 2">
+                                    <img src="assets/images/experience/ultima1.jpg" alt="Ultima photo 1">
+                                    <img src="assets/images/experience/ultima2.jpg" alt="Ultima photo 2">
                                 </div>
                             </div>
                             <div class="swap-slide swap-coming-soon">
@@ -151,50 +160,69 @@
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- Heroscore -->
                     <div class="timeline-item reveal">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Jan 2025 - Jun 2024</span>
-                            <h3 class="timeline-title">Computer Vision Engineer Intern</h3>
-                            <h4 class="timeline-company">SmartPlay AI</h4>
+                            <span class="timeline-date">Ongoing</span>
+                            <h3 class="timeline-title">Co-founder & AI Developer</h3>
+                            <h4 class="timeline-company">Heroscore</h4>
                             <div class="timeline-tech">
                                 <i class="devicon-python-plain" title="Python"></i>
-                                <i class="devicon-java-plain" title="Java"></i>
+                                <i class="devicon-tensorflow-original" title="TensorFlow"></i>
+                                <i class="devicon-opencv-plain" title="OpenCV"></i>
                             </div>
                             <p class="timeline-description">
-                              Architected an end-to-end **AI-powered Padel Analytics platform** that transforms match recordings into actionable performance insights using **Computer Vision and Deep Learning**. Developed and integrated models for **multi-player tracking, 13-DoF pose estimation, stroke classification, and ball-hit detection**, enabling player/ball trajectory analysis, 2D court projection, heatmaps, stroke-level ball velocity, and player error metrics. Built the supporting **FastAPI backend and React interface** to process videos and deliver structured analytics, creating a foundation for applications in **sports broadcasting, performance analysis, and AI-assisted coaching**.
+                                Co-founded Heroscore, a football analytics platform incubated through the OSTX (Open Startup Tunisia) program. Developing AI models applied to football, including player detection, automatic statistics extraction, and predictive models for league champions and match winners.
                             </p>
                         </div>
-                        <a href="https://github.com/talel90/Smart_Energie_System" target="_blank" rel="noopener noreferrer" class="timeline-image github-preview">
-                            <div class="github-preview-header">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                                <span class="github-repo-path">Talel90 / Smart_Energie_System</span>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="timeline-image website-preview website-preview-image">
+                            <div class="website-preview-header">
+                                <span class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </span>
+                                <span class="website-url">heroscore</span>
                             </div>
-                            <div class="github-preview-content">
-                                <p class="github-preview-desc">Smart energy management platform</p>
-                                <div class="github-preview-stats">
-                                    <span class="github-lang"><span class="lang-dot python"></span>Python</span>
-                                    <span class="github-lang"><span class="lang-dot java"></span>Java</span>
-                                </div>
-                                <span class="github-preview-cta">View Repository →</span>
+                            <div class="website-preview-content" style="background-image: url('assets/images/experience/heroscore.png');">
+                                <span class="website-preview-cta">Visit Site →</span>
                             </div>
                         </a>
                     </div>
+
+                    <!-- IEEE Student Branch -->
                     <div class="timeline-item reveal">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Sep 2025 - Jan 2025</span>
-                            <h3 class="timeline-title">Smart Fleet Architect</h3>
-                            <h4 class="timeline-company"><a href="https://site.ieee.org/tunisia-ras/" target="_blank" rel="noopener noreferrer"></a>Robotics and Automation Society </h4>
-                            <div class="timeline-tech">
-                                <i class="devicon-kotlin-plain" title="C++"></i>
-                                <i class="devicon-java-plain" title="Python"></i>
-                            </div>
+                            <span class="timeline-date">Sep 2024 - Aug 2026</span>
+                            <h3 class="timeline-title">IEEE Student Branch — Treasurer, RAS Chapter</h3>
+                            <h4 class="timeline-company"><a href="https://fss.ieee.tn/" target="_blank" rel="noopener noreferrer">IEEE FSS SB</a></h4>
                             <p class="timeline-description">
-                                Participated in the **TSYP13 Technical Challenge**, organized by the **IEEE RAS Tunisia Section Chapter and IEEE VTS Tunisia Section Chapter**, developing *Smart Fleet Architect*, a decentralized multi-agent solution for autonomous logistics. Worked on designing and prototyping a fleet of autonomous vehicles operating under **V2V communication constraints**, addressing dynamic vehicle routing, real-time task allocation, resource limitations, and fault tolerance. As part of the challenge, I contributed to the development of a **scientific paper and technical report**, documenting the system architecture, methodology, implementation, and evaluation. This experience strengthened my expertise in **multi-agent systems, robotics, optimization, autonomous systems, and technical research**.
+                                Active member of the IEEE Student Branch, serving as Treasurer of the IEEE Robotics and Automation Society (RAS) Student Chapter. Organized and led technical workshops, contributed to the planning and execution of student events, and took part in hackathons and engineering competitions, including TSYP13. Strengthened my leadership, event management, teamwork, and ability to engage with and support a technical community.
+                            </p>
+                        </div>
+                        <div class="timeline-image timeline-image-swap">
+                            <div class="swap-slide active">
+                                <div class="timeline-image-duo">
+                                    <img src="assets/images/experience/ieee1.jpg" alt="IEEE RAS photo 1">
+                                    <img src="assets/images/experience/ieee2.jpg" alt="IEEE RAS photo 2">
+                                </div>
+                            </div>
+                            <div class="swap-slide swap-coming-soon">
+                                <span class="coming-soon-label">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart Fleet Architect - TSYP13 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025</span>
+                            <h3 class="timeline-title">Smart Fleet Architect — TSYP13 Technical Challenge</h3>
+                            <h4 class="timeline-company"><a href="https://site.ieee.org/tunisia-ras/" target="_blank" rel="noopener noreferrer">IEEE RAS & VTS Tunisia</a></h4>
+                            <p class="timeline-description">
+                                Took part in the TSYP13 Technical Challenge, organized by the IEEE RAS Tunisia Section Chapter and IEEE VTS Tunisia Section Chapter, developing Smart Fleet Architect, a decentralized multi-agent solution for autonomous logistics. Designed and prototyped a fleet of autonomous vehicles operating under V2V communication constraints, addressing dynamic vehicle routing, real-time task allocation, resource limitations, and fault tolerance. Co-authored a scientific paper and technical report documenting the system architecture, methodology, implementation, and evaluation.
                             </p>
                         </div>
                         <a href="https://simbrain.net/" target="_blank" rel="noopener noreferrer" class="timeline-image website-preview website-preview-image">
@@ -202,13 +230,15 @@
                                 <span class="browser-dots">
                                     <span></span><span></span><span></span>
                                 </span>
-                                <span class="website-url">simbrain.net</span>
+                                <span class="website-url">tsyp13</span>
                             </div>
-                            <div class="website-preview-content" style="background-image: url('assets/images/experience/simbrain.png');">
+                            <div class="website-preview-content" style="background-image: url('assets/images/experience/tsyp13.png');">
                                 <span class="website-preview-cta">Visit Site →</span>
                             </div>
                         </a>
                     </div>
+
+                    <!-- Smart Energie System -->
                     <div class="timeline-item reveal">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content glass-card">
@@ -220,7 +250,7 @@
                                 <i class="devicon-java-plain" title="Java"></i>
                             </div>
                             <p class="timeline-description">
-                              Architected a distributed smart-energy platform using **Java and Python**, integrating CORBA, RMI, and JMS for real-time service communication, remote device control, and asynchronous energy alerts. Integrated a **machine learning module for consumption forecasting** and designed a centralized orchestration layer to automate energy-saving decisions based on usage patterns and contextual data.
+                                Architected a distributed smart-energy platform using Java and Python, integrating CORBA, RMI, and JMS for real-time service communication, remote device control, and asynchronous energy alerts. Integrated a machine learning module for consumption forecasting and designed a centralized orchestration layer to automate energy-saving decisions based on usage patterns and contextual data.
                             </p>
                         </div>
                         <a href="https://github.com/talel90/Smart_Energie_System" target="_blank" rel="noopener noreferrer" class="timeline-image github-preview">
@@ -240,62 +270,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="timeline-item reveal">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content glass-card">
-                            <span class="timeline-date">Nov 2023 - Mar 2024</span>
-                            <h3 class="timeline-title">Research Assistant</h3>
-                            <h4 class="timeline-company"><a href="https://www.ucmerced.edu/" target="_blank" rel="noopener noreferrer">University of California, Merced</a></h4>
-                            <div class="timeline-tech">
-                                <i class="devicon-python-plain" title="Python"></i>
-                                <i class="devicon-javascript-plain" title="JavaScript"></i>
-                                <i class="devicon-pandas-plain" title="Pandas"></i>
-                                <i class="devicon-matplotlib-plain" title="Matplotlib"></i>
-                            </div>
-                            <p class="timeline-description">
-                                Developed data processing scripts in Python to extract, clean, and organize large sets of EEG data, identifying and isolating relevant neural features. Collaborated with a graduate researcher to translate processed neurological data into actionable insights about sensory processing in the human brain.
-                            </p>
-                        </div>
-                        <a href="https://escholarship.org/uc/item/9h06s4pf" target="_blank" rel="noopener noreferrer" class="timeline-image website-preview website-preview-image">
-                            <div class="website-preview-header">
-                                <span class="browser-dots">
-                                    <span></span><span></span><span></span>
-                                </span>
-                                <span class="website-url">escholarship.org</span>
-                            </div>
-                            <div class="website-preview-content" style="background-image: url('assets/images/experience/research.png');">
-                                <span class="website-preview-cta">Read Paper →</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="timeline-item reveal">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content glass-card">
-                            <span class="timeline-date">Apr 2020 - Oct 2021</span>
-                            <h3 class="timeline-title">Software Engineer Intern</h3>
-                            <h4 class="timeline-company"><a href="https://www.tappityapp.com/" target="_blank" rel="noopener noreferrer">Tappity Inc.</a></h4>
-                            <div class="timeline-tech">
-                                <i class="devicon-python-plain" title="Python"></i>
-                                <i class="devicon-javascript-plain" title="JavaScript"></i>
-                                <i class="devicon-react-original" title="React"></i>
-                            </div>
-                            <p class="timeline-description">
-                                Collaborated with full-stack engineers using Python, JavaScript, and React to design and implement new experiential learning activities for a science education app, boosting user engagement and information retention among K–8 students.
-                            </p>
-                        </div>
-                        <a href="https://www.tappityapp.com/" target="_blank" rel="noopener noreferrer" class="timeline-image website-preview website-preview-logo-box">
-                            <div class="website-preview-header">
-                                <span class="browser-dots">
-                                    <span></span><span></span><span></span>
-                                </span>
-                                <span class="website-url">tappityapp.com</span>
-                            </div>
-                            <div class="website-preview-content">
-                                <img src="assets/images/experience/tappity.png" alt="Tappity" class="website-preview-logo-img">
-                                <span class="website-preview-cta">Visit Site →</span>
-                            </div>
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -306,180 +281,23 @@
                 <h2 class="section-title">Projects</h2>
                 <div class="projects-grid">
 
-                    <!-- LLNL Project -->
+                    <!-- Heroscore -->
                     <article class="project-card glass-card reveal">
-                        <div class="project-image llnl-preview">
-                            <img src="assets/images/projects/llnltemp.jpg" alt="Lawrence Livermore National Laboratory">
+                        <div class="project-image">
+                            <img src="assets/images/projects/heroscore.png" alt="Heroscore">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Lawrence Livermore National Laboratory</h3>
+                            <h3 class="project-title">Heroscore</h3>
                             <p class="project-description">
-                                Team-Lead capstone project developing STEM educational video games with LLNL researchers, investigating the effectiveness of game-based learning environments for user engagement, information retention, and learning-environment feasibility.
+                                AI-powered football analytics platform, incubated through the OSTX (Open Startup Tunisia) program. Computer vision models detect players and automatically extract match statistics, feeding predictive models for league champions and match winners.
                             </p>
                             <div class="project-tags project-tech">
-                                <i class="devicon-godot-plain" title="Godot"></i>
-                                <i class="devicon-csharp-plain" title="C#"></i>
                                 <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-tensorflow-original" title="TensorFlow"></i>
+                                <i class="devicon-opencv-plain" title="OpenCV"></i>
                             </div>
                             <div class="project-links">
-                                <span class="project-link project-link-coming-soon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="5" y="11" width="14" height="9" rx="2"></rect>
-                                        <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
-                                    </svg>
-                                    Code protected by NDA, feel free to reach out to discuss my work!
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Inside LLMs Project -->
-                    <article class="project-card glass-card reveal">
-                        <div class="project-image llms-preview">
-                            <div class="llms-logo">
-                                <div class="llms-logo-text">Inside <span class="llms-glitch" data-text="LLMs">LLMs</span></div>
-                                <div class="llms-tagline">Explore the Architecture</div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title"><a href="https://bluelijah.github.io/Inside-LLMs" target="_blank" rel="noopener noreferrer">Inside LLMs</a></h3>
-                            <p class="project-description">
-                                Live educational website teaching the functional principles of large language models through interactive visual demos for tokenization, vector embeddings, self-attention, and RLHF. Built in vanilla HTML, CSS, and JavaScript.
-                            </p>
-                            <div class="project-tags project-tech">
-                                <i class="devicon-html5-plain" title="HTML5"></i>
-                                <i class="devicon-css3-plain" title="CSS3"></i>
-                                <i class="devicon-javascript-plain" title="JavaScript"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://bluelijah.github.io/Inside-LLMs" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                    Visit Here
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card glass-card reveal">
-                        <div class="project-image syllabud-preview">
-                            <!-- Animated flowers -->
-                            <div class="syllabud-flower">
-                                <div class="syllabud-flower-inner">
-                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
-                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
-                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
-                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
-                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
-                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
-                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
-                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
-                                    </svg>
-                                    <div class="syllabud-flower-stem"></div>
-                                </div>
-                            </div>
-                            <div class="syllabud-flower">
-                                <div class="syllabud-flower-inner">
-                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
-                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
-                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
-                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
-                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
-                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
-                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
-                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
-                                    </svg>
-                                    <div class="syllabud-flower-stem"></div>
-                                </div>
-                            </div>
-                            <div class="syllabud-flower">
-                                <div class="syllabud-flower-inner">
-                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
-                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
-                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
-                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
-                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
-                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
-                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
-                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
-                                    </svg>
-                                    <div class="syllabud-flower-stem"></div>
-                                </div>
-                            </div>
-                            <div class="syllabud-flower">
-                                <div class="syllabud-flower-inner">
-                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
-                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
-                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
-                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
-                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
-                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
-                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
-                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
-                                    </svg>
-                                    <div class="syllabud-flower-stem"></div>
-                                </div>
-                            </div>
-                            <div class="syllabud-flower">
-                                <div class="syllabud-flower-inner">
-                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
-                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
-                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
-                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
-                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
-                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
-                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
-                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
-                                    </svg>
-                                    <div class="syllabud-flower-stem"></div>
-                                </div>
-                            </div>
-                            <div class="syllabud-flower">
-                                <div class="syllabud-flower-inner">
-                                    <svg class="syllabud-flower-head" width="36" height="36" viewBox="0 0 48 48" fill="none">
-                                        <ellipse cx="24" cy="12" rx="8" ry="12" fill="#8B5CF6" opacity="0.9"/>
-                                        <ellipse cx="12" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(-45 12 20)"/>
-                                        <ellipse cx="36" cy="20" rx="8" ry="12" fill="#7C3AED" opacity="0.85" transform="rotate(45 36 20)"/>
-                                        <ellipse cx="14" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(-20 14 32)"/>
-                                        <ellipse cx="34" cy="32" rx="8" ry="12" fill="#6D28D9" opacity="0.8" transform="rotate(20 34 32)"/>
-                                        <circle cx="24" cy="24" r="6" fill="#FCD34D"/>
-                                        <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
-                                    </svg>
-                                    <div class="syllabud-flower-stem"></div>
-                                </div>
-                            </div>
-                            <!-- Logo -->
-                            <div class="syllabud-logo">
-                                <div class="syllabud-logo-text">Syllabud</div>
-                                <div class="syllabud-tagline">Learn What Matters</div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title"><a href="https://syllabud.app" target="_blank" rel="noopener noreferrer">Syllabud.app</a></h3>
-                            <p class="project-description">
-                                Live website and 2nd place hackathon winner. Full-stack AI course creator that generates personalized curricula with curated resources based on subject, timeline, depth, and learning style.
-                            </p>
-                            <div class="project-tags project-tech">
-                                <i class="devicon-react-original" title="React"></i>
-                                <i class="devicon-python-plain" title="Python"></i>
-                                <i class="devicon-fastapi-plain" title="FastAPI"></i>
-                                <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
-                                <i class="devicon-css3-plain" title="CSS"></i>
-                                <i class="devicon-javascript-plain" title="JavaScript"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://syllabud.app" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                    Visit Here
-                                </a>
-                                <a href="https://github.com/bluelijah/Syllabud" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                     </svg>
@@ -489,29 +307,124 @@
                         </div>
                     </article>
 
+                    <!-- SmartPlayAI / Padel Analysis Platform -->
                     <article class="project-card glass-card reveal">
                         <div class="project-image">
-                            <img src="assets/images/projects/fractal.png" alt="Function Visualization">
+                            <img src="assets/images/projects/smartplayai.png" alt="SmartPlayAI Padel Match Analysis">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Function Visualization</h3>
+                            <h3 class="project-title">SmartPlayAI — Padel Match Analysis</h3>
                             <p class="project-description">
-                                A design tool that renders complex fractals (Mandelbrot, Fibonacci, etc.) by mapping mathematical functions to visual outputs, exploring the intersection of math and generative art.
+                                My graduation project at Ultima: an end-to-end computer vision pipeline for automated padel match analysis. Combines TrackNetV3, YOLOv8/YOLOv8-Pose, SAM2, the Hungarian algorithm, and homographic court projection to track players and the ball, producing a 179-column behavioral dataset visualized through a React and FastAPI dashboard.
                             </p>
                             <div class="project-tags project-tech">
                                 <i class="devicon-python-plain" title="Python"></i>
-                                <i class="devicon-pygame-original" title="Pygame"></i>
+                                <i class="devicon-opencv-plain" title="OpenCV"></i>
+                                <i class="devicon-react-original" title="React"></i>
+                                <i class="devicon-fastapi-plain" title="FastAPI"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://docs.google.com/presentation/d/1_JND1KFuckV7eHV7WKbPKbBeZplNyCRLAsypv4-UkKU/edit?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                        <line x1="8" y1="21" x2="16" y2="21"></line>
-                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                     </svg>
-                                    Slides
+                                    Code
                                 </a>
-                                <a href="https://github.com/bluelijah/MandelbrotFractal" class="project-link" target="_blank" rel="noopener noreferrer">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Padel VAR -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">
+                            <img src="assets/images/projects/padel-var.png" alt="Padel VAR">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Padel VAR</h3>
+                            <p class="project-description">
+                                A two-camera VAR system for padel courts. A touchscreen button at the court entrance saves the last two minutes of the match and sends the clip to the player's phone via a QR code.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <i class="devicon-opencv-plain" title="OpenCV"></i>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-link project-link-coming-soon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="11" width="14" height="9" rx="2"></rect>
+                                        <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                                    </svg>
+                                    In development — feel free to reach out to discuss it!
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- StudyNL AI -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">
+                            <img src="assets/images/projects/studynl.png" alt="StudyNL AI">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">StudyNL AI</h3>
+                            <p class="project-description">
+                                An agentic RAG assistant helping international students navigate studying and living in the Netherlands — visa, housing, admission, healthcare, and part-time work. Built with LangChain, Gemini Flash, and ChromaDB, with a no-hallucination guardrail that keeps every answer grounded in its knowledge base.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <span class="skill-icon-text" title="LangChain">Lc</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Digger Tools Chatbot -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">
+                            <img src="assets/images/projects/digger-tools.png" alt="Digger Tools Chatbot">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Digger Tools Chatbot</h3>
+                            <p class="project-description">
+                                An end-to-end conversational workflow built with LangGraph, connecting Firecrawl, Gemini, and LangChain to power an intelligent chatbot.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-python-plain" title="Python"></i>
+                                <span class="skill-icon-text" title="LangGraph">Lg</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kubernetes IaC -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">
+                            <img src="assets/images/projects/k8s-iac.png" alt="Automated Kubernetes Cluster Deployment">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Automated Kubernetes Cluster Deployment</h3>
+                            <p class="project-description">
+                                Infrastructure-as-code project automating a multi-node Kubernetes cluster deployment with Vagrant and Kubeadm, covering VM provisioning, cluster initialization, and network configuration.
+                            </p>
+                            <div class="project-tags project-tech">
+                                <i class="devicon-kubernetes-plain" title="Kubernetes"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                     </svg>
@@ -542,10 +455,7 @@
                             <i class="devicon-python-plain" title="Python"></i>
                             <i class="devicon-javascript-plain" title="JavaScript"></i>
                             <i class="devicon-java-plain" title="Java"></i>
-                            <i class="devicon-kotlin-plain" title="Kotlin"></i>
                             <i class="devicon-cplusplus-plain" title="C++"></i>
-                            <i class="devicon-csharp-plain" title="C#"></i>
-                            <i class="devicon-azuresqldatabase-plain" title="SQL"></i>
                             <i class="devicon-html5-plain" title="HTML"></i>
                             <i class="devicon-css3-plain" title="CSS"></i>
                         </div>
@@ -553,24 +463,7 @@
 
                     <div class="skill-category reveal collapsed">
                         <h3 class="skill-category-title" data-collapsible>
-                            Frameworks & Libraries
-                            <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </h3>
-                        <div class="skills-grid skills-icons">
-                            <i class="devicon-react-original" title="React"></i>
-                            <i class="devicon-django-plain" title="Django"></i>
-                            <i class="devicon-flask-original" title="Flask"></i>
-                            <i class="devicon-pandas-plain" title="Pandas"></i>
-                            <i class="devicon-matplotlib-plain" title="Matplotlib"></i>
-                            <i class="devicon-pygame-original" title="Pygame"></i>
-                        </div>
-                    </div>
-
-                    <div class="skill-category reveal collapsed">
-                        <h3 class="skill-category-title" data-collapsible>
-                            AI & Data Science
+                            AI, ML & Computer Vision
                             <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
@@ -578,15 +471,34 @@
                         <div class="skills-grid skills-icons">
                             <i class="devicon-tensorflow-original" title="TensorFlow"></i>
                             <i class="devicon-pytorch-original" title="PyTorch"></i>
+                            <i class="devicon-scikitlearn-plain" title="Scikit-learn"></i>
+                            <i class="devicon-opencv-plain" title="OpenCV"></i>
+                            <i class="devicon-pandas-plain" title="Pandas"></i>
                             <i class="devicon-numpy-plain" title="NumPy"></i>
-                            <i class="devicon-jupyter-plain" title="Jupyter"></i>
-                            <i class="devicon-anaconda-original" title="Anaconda"></i>
+                            <span class="skill-icon-text" title="LangChain">Lc</span>
+                            <span class="skill-icon-text" title="LangGraph">Lg</span>
                         </div>
                     </div>
 
                     <div class="skill-category reveal collapsed">
                         <h3 class="skill-category-title" data-collapsible>
-                            Tools & Databases
+                            Frameworks & Frontend
+                            <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </h3>
+                        <div class="skills-grid skills-icons">
+                            <i class="devicon-react-original" title="React"></i>
+                            <i class="devicon-nextjs-plain" title="Next.js"></i>
+                            <i class="devicon-tailwindcss-plain" title="Tailwind CSS"></i>
+                            <i class="devicon-fastapi-plain" title="FastAPI"></i>
+                            <span class="skill-icon-text" title="shadcn/ui">sh</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal collapsed">
+                        <h3 class="skill-category-title" data-collapsible>
+                            Tools & Infrastructure
                             <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
@@ -594,11 +506,9 @@
                         <div class="skills-grid skills-icons">
                             <i class="devicon-git-plain" title="Git"></i>
                             <i class="devicon-github-original" title="GitHub"></i>
-                            <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                            <i class="devicon-kubernetes-plain" title="Kubernetes"></i>
+                            <i class="devicon-jenkins-line" title="Jenkins"></i>
                             <i class="devicon-vscode-plain" title="VS Code"></i>
-                            <i class="devicon-figma-plain" title="Figma"></i>
-                            <span class="skill-icon-text" title="Excel">Ex</span>
-                            <span class="skill-icon-text" title="Lucid">Lu</span>
                         </div>
                     </div>
                 </div>
@@ -613,16 +523,16 @@
                     <p class="contact-text">
                         I'm currently open to new opportunities and would love to hear from you. Whether you have a question, a project idea, or just want to say hi, feel free to reach out!
                     </p>
-                    <a href="mailto:ElijahOlson510@gmail.com" class="btn btn-primary btn-large">
+                    <a href="mailto:talelriahi90@gmail.com" class="btn btn-primary btn-large">
                         Say Hello
                     </a>
                     <div class="contact-socials">
-                        <a href="https://www.linkedin.com/in/olsonelijah/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/riahi-talel/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
                         </a>
-                        <a href="https://github.com/bluelijah" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <a href="https://github.com/talel90" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
@@ -636,7 +546,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>Designed & Built by <span class="highlight">Elijah Olson</span></p>
+            <p>Designed & Built by <span class="highlight">Talel Riahi</span></p>
             <p class="footer-copyright">&copy; 2026 All rights reserved.</p>
         </div>
     </footer>
